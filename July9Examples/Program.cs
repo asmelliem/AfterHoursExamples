@@ -96,7 +96,7 @@ namespace July9Examples
             /*
              * 
              * Exercise 13: Prompt the user for a number. Use a for loop to output all the numbers from that number to 0. Also ask the user if they would like to continue
-             */
+            
 
             bool proceed;
             do
@@ -131,6 +131,26 @@ namespace July9Examples
                 }
 
             } while (proceed == true);
+             */
+
+            /*
+             * Exercise 16: Use a For Loop to output a triangle of asterisks with a height of ten
+             */
+
+            for (int i = 0; i <= 10; i++)
+            {
+                if (i != 0)
+                {
+                    Console.Write("\n");
+                }
+                
+
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+            }
+
         }
     }
 }

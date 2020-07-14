@@ -2,14 +2,68 @@
 
 namespace July13Examples
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            /*Exercise 19: Prompt the user to enter two numberts. Use a for-loop to calculate the sum
+            * of all the numbers from the first nmber entered to the second.
+            
+            var exercise = new Exercise19();
+            var proceed = "";
+            do
+            {
+                Console.WriteLine("Please enter a number:");
+                var firstNumInput = Console.ReadLine();
+                var validFirstNum = int.TryParse(firstNumInput, out var firstNumber);
+                Console.WriteLine("Please enter another number greater than the value above:");
+                var secondNumInput = Console.ReadLine();
+                var validSecondNum = int.TryParse(secondNumInput, out var secondNumber);
+                if (!validFirstNum || !validSecondNum)
+                {
+                    Console.WriteLine("One or more of the values was not a valid number.\nPlease try again.");
+                    Console.WriteLine("");
+                    proceed = "Y";
+                }
+                else if (firstNumber >= secondNumber)
+                {
+                    Console.WriteLine("Your second value wasn't greater than the first value.\nPlease try again.");
+                    Console.WriteLine("");
+                    proceed = "Y";
+                }
+                else
+                {
+                    //version one using method below versus another class
+                    //var sum = SumUserInputs(firstNumber, secondNumber);
+                    var sum = Exercise19.SumUserInputs(firstNumber, secondNumber);
+                    Console.WriteLine($"The sum from {firstNumber}-{secondNumber} is: {sum}");
+                    Console.WriteLine("Would you like to continue? (y/n)");
+                    proceed = Console.ReadLine().ToUpper();
+                    Console.WriteLine("");
+                }
+            } while (proceed == "Y");
+            */
+
+
+            /*
+             * Example using methods
+             *
+            Add(5, 5);
+
+            var accessorService = new AccessorService();
+            var result = accessorService.ShowGreeting();
+            foreach (var greeting in result)
+            {
+                Console.WriteLine(greeting);
+            }
+            accessorService.SomeProperty = "5";
+            */
+
+
             /*
              * Exercise 18: Prompt the user to enter a number. Use a for-loop to calculate the sum of all the numbers
-             * from 1 to the number entered.
-             
+             * from 1 to the number entered.             
+             */
 
             var proceed = "";
             do
@@ -26,61 +80,42 @@ namespace July13Examples
                 }
                 else
                 {
-                    var sum = 0;
-                    for (int i = 0; i <= number; i++)
-                    {
-                        sum += i;
-                    }
 
+                    var sum = SumUserInputs(number);
                     Console.WriteLine($"The sum from 1-{number} is: {sum}");
                     Console.WriteLine("Would you like to continue? (y/n)");
                     proceed = Console.ReadLine().ToUpper();
                     Console.WriteLine("");
-                }               
+                }
 
             } while (proceed == "Y");
-            */
+        }
 
-            /*Exercise 19: Prompt the user to enter two numberts. Use a for-loop to calculate the sum
-             * of all the numbers from the first nmber entered to the second.
-             */
-            var proceed = "";
-            do
+        public static int SumUserInputs(int valueOne)
+        {
+            var sum = 0;
+            for (int i = 1; i <= valueOne; i++)
             {
-                Console.WriteLine("Please enter a number:");
-                var firstNumInput = Console.ReadLine();
-                var validFirstNum = int.TryParse(firstNumInput, out var firstNumber);
-                Console.WriteLine("Please enter another number greater than the value above:");
-                var secondNumInput = Console.ReadLine();
-                var validSecondNum = int.TryParse(secondNumInput, out var secondNumber);
+                sum += i;
+            }
 
-                if (!validFirstNum || !validSecondNum)
-                {
-                    Console.WriteLine("One or more of the values was not a valid number.\nPlease try again.");
-                    Console.WriteLine("");
-                    proceed = "Y";
-                }
-                else if(firstNumber >= secondNumber)
-                {
-                    Console.WriteLine("Your second value wasn't greater than the first value.\nPlease try again.");
-                    Console.WriteLine("");
-                    proceed = "Y";
-                }
-                else
-                {
-                    var sum = 0;
-                    for (int i = firstNumber; i <= secondNumber; i++)
-                    {
-                        sum += i;
-                    }
+            return sum;
+        }
 
-                    Console.WriteLine($"The sum from {firstNumber}-{secondNumber} is: {sum}");
-                    Console.WriteLine("Would you like to continue? (y/n)");
-                    proceed = Console.ReadLine().ToUpper();
-                    Console.WriteLine("");
-                }
+        public static int SumUserInputs(int valueOne, int valueTwo)
+        {
+            var sum = 0;
+            for (int i = valueOne; i <= valueTwo; i++)
+            {
+                sum += i;
+            }
+            return sum;
+        }
 
-            } while (proceed == "Y");
+        public static void Add(int value, int valueTwo)
+        {
+            var addition = value + valueTwo;
+            Console.WriteLine(addition);
         }
     }
 }

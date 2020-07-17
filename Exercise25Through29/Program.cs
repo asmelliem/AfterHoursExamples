@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text;
 
 namespace Exercise25Through29
 {
@@ -16,8 +18,7 @@ namespace Exercise25Through29
             {
                 Console.WriteLine("Enter a sentence: ");
                 var sentence = Console.ReadLine();
-                Console.WriteLine(BreakUpSentence(sentence));             
-
+                Console.WriteLine(BreakUpSentence(sentence).ToString());            
                 Console.WriteLine("Would you like to continue? (y/n)");
 
             }while(Console.ReadLine().ToUpper() == "Y");
@@ -72,9 +73,9 @@ namespace Exercise25Through29
 
             #region Exercise 28
             /*
-            * Exercise 28
-            * Prompt the user to enter text. Remove all the vowels and output the text.
-            */
+             * Exercise 28
+             * Prompt the user to enter text. Remove all the vowels and output the text.
+             
             do
             {
                 Console.WriteLine("Enter some text: ");
@@ -88,17 +89,19 @@ namespace Exercise25Through29
 
             } while (Console.ReadLine().ToUpper() == "Y");
 
-            Console.WriteLine("Goodbye!");            
+            Console.WriteLine("Goodbye!");   
+           */
             #endregion
+            
         }
 
-        public static string BreakUpSentence(string sentence)
+        public static StringBuilder BreakUpSentence(string sentence)
         {
-            string[] words = sentence.Split(' ');
-            var result = "";
+            var words = sentence.Split(' ');
+            var result = new StringBuilder("");
             foreach (var word in words)
             {
-                result += $"{word}\n";
+                result.Append($"{word}\n");
             }
             return result;
         }
@@ -106,16 +109,13 @@ namespace Exercise25Through29
         public static int DetermineNumberOfVowels(char[] sentence)
         {
             var vowelCount = 0;
-            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
 
             foreach (var letter in sentence)
-            {
-                foreach (var character in vowels)
+            {                
+                if(vowels.Contains(letter))
                 {
-                    if (letter.Equals(character))
-                    {
-                        vowelCount++;
-                    }
+                    vowelCount++;
                 }
             }
             return vowelCount;
@@ -124,16 +124,13 @@ namespace Exercise25Through29
         public static int DetermineNumberOfConsonants(char[] sentence)
         {
             var consonantCount = sentence.Length;
-            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
 
             foreach (var letter in sentence)
-            {
-                foreach (var character in vowels)
+            {                
+                if(vowels.Contains(letter))
                 {
-                    if (letter.Equals(character))
-                    {
-                        consonantCount--;
-                    }
+                    consonantCount--;
                 }
             }
             return consonantCount;
@@ -141,15 +138,17 @@ namespace Exercise25Through29
 
         public static string RemoveVowels(char [] sentence)
         {
-            var result = "";
+            var result = new StringBuilder("");
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y' };
             foreach (var letter in sentence)
             {
-               if(letter != 'a' && letter != 'e' && letter != 'i' && letter != 'o' && letter != 'u')
+               if(!vowels.Contains(letter))
                 {
-                    result += letter;
+                    result.Append(letter);
                 }
             }
-            return result;
+            return result.ToString();
         }
+
     }
 }

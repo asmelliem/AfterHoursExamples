@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace July15Examples
 {
@@ -6,20 +7,27 @@ namespace July15Examples
     {
         static void Main(string[] args)
         {
-            //Old way to concatenate
+            #region Old way to concatenate
+
             Console.WriteLine("Hi " + "I'm " + "Ada");
             Console.WriteLine("");
+            #endregion
 
-            //Concatenantion
+            #region Concatenantion
+            
             var somethingFunky = string.Concat("Hi", " Ada");
             Console.WriteLine(somethingFunky);
             Console.WriteLine("");
+            #endregion
 
-            //String interpolation --> new
+            #region String interpolation --> new
+            
             Console.WriteLine($"{somethingFunky} I'm an example program");
             Console.WriteLine("");
+            #endregion
 
-            //Split
+            #region Split
+            
             var sentence = "Hello, my name is Ada";
             var phrase = sentence.Split(' ');
             Console.WriteLine("Using foreach loop");
@@ -35,22 +43,28 @@ namespace July15Examples
                 Console.WriteLine($"Index{i}: {phrase[i]}");
             }
             Console.WriteLine("");
+            #endregion
 
-            //Whitespace example
+            #region Whitespace Example
+            
             var whitespace = "     hello, this is Ada     ";
             Console.WriteLine($"Whitespace string: {whitespace}");
             Console.WriteLine($"This is the trimmed version:{whitespace.Trim()}");
             Console.WriteLine("");
+            #endregion
 
-            //Indexof - Returns integer of the value for where that string segments starts
+            #region Indexof - Returns integer of the value for where that string segments starts
+
             var multiTeacher = "Corey Koehler Darion Thompson";
             var firstIndex = multiTeacher.IndexOf("Darion");
             var secondIndex = multiTeacher.IndexOf("Koehler");
             Console.WriteLine($"'Darion' starts at index {firstIndex}");
             Console.WriteLine($"'Koehler' starts at index {secondIndex}");
             Console.WriteLine("");
+            #endregion
 
-            //String Comparison
+            #region String Comparison
+          
             Console.WriteLine("Enter something:");
             var userInput = Console.ReadLine();
             if (userInput.Equals("CORY",StringComparison.CurrentCultureIgnoreCase))
@@ -62,6 +76,15 @@ namespace July15Examples
                 Console.WriteLine("Hey, your input is not equal to 'CORY'");
             }
             Console.WriteLine("");
+            #endregion
+
+            #region String Builder
+            
+            var stringBuilder = new StringBuilder("Darion is teaching");
+            stringBuilder.Append(" this class");
+            Console.WriteLine(stringBuilder);
+            Console.WriteLine("");
+            #endregion
         }
     }
 }

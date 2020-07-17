@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "July9Examples", "July9Examp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "July13Examples", "July13Examples\July13Examples.csproj", "{C8BE3EA0-ECB0-4E2A-9B24-9A564DB4F5C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise25Through29", "Exercise25Through29\Exercise25Through29.csproj", "{6DBAF940-0E37-4566-9176-51A7A927F8AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise25Through29", "Exercise25Through29\Exercise25Through29.csproj", "{6DBAF940-0E37-4566-9176-51A7A927F8AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "July15Examples", "July15Examples\July15Examples.csproj", "{05E7648B-8A71-4C16-8C7B-90095E0A6C1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "July15Examples", "July15Examples\July15Examples.csproj", "{05E7648B-8A71-4C16-8C7B-90095E0A6C1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "July16Examples", "July16Examples\July16Examples.csproj", "{84704E79-065E-45CE-87CA-E35107E69FEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{05E7648B-8A71-4C16-8C7B-90095E0A6C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05E7648B-8A71-4C16-8C7B-90095E0A6C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05E7648B-8A71-4C16-8C7B-90095E0A6C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84704E79-065E-45CE-87CA-E35107E69FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84704E79-065E-45CE-87CA-E35107E69FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84704E79-065E-45CE-87CA-E35107E69FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84704E79-065E-45CE-87CA-E35107E69FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

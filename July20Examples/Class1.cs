@@ -1,24 +1,31 @@
-﻿using NUnit.Framework;
+﻿
 using System;
+using Xunit;
 
 namespace July20Examples
 { 
     public class Class1
     {
-        [Test]
+        [Fact]
         public void OneEqualsOne()
         {
+            //arrange
+            int  actual;
             var expected = 1;
-            var actual = 1;
-            Assert.AreEqual(expected, actual);
+            
+            //act
+            actual = 1;
+
+            //assert
+            Assert.Equal(expected, actual);
         }
 
-        [Test]
+        [Fact]
         public void OneNotEqualTwo()
         {
             var expected = 1;
             var actual = 2;
-            Assert.AreEqual(expected, actual);
+            Assert.NotEqual(expected, actual);
         }
     }
 }

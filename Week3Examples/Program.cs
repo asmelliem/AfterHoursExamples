@@ -22,7 +22,6 @@ namespace Week3Examples
             
             #endregion
         }
-
         public static StringBuilder SentenceBuilder()
         {
             StringBuilder sentence = new StringBuilder("");

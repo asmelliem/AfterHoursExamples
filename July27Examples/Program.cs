@@ -14,8 +14,6 @@ namespace July27Examples
             //Exercise47();
             Exercise48();
             //DictionaryExample();
-
-
            
         }
 
@@ -95,10 +93,10 @@ namespace July27Examples
 
 
         public static void Exercise48()
-        {
+        {            
             do
             {
-                List<int> numList = new List<int>() { };
+                var numList = new List<int>();
                 var input = "";
 
                 do
@@ -111,37 +109,43 @@ namespace July27Examples
                     {
                         numList.Add(number);
                     }
-                    else
+                    else if (input.ToLower() == "q")
                     {
                         Console.WriteLine(ReturnSum(numList));
                     }
+                    else
+                    {
+                        Console.WriteLine("You didn't put in a valid input. Please try again.");
+                        continue;
+                    }
+
                 } while (input != "q");
 
                 Console.WriteLine("Would you like to continue? (y/n)");
 
             } while (Console.ReadLine().ToUpper() == "Y");
 
-            Console.WriteLine("Goodbye!");
-            
+            Console.WriteLine("Goodbye!"); 
         }
 
         public static StringBuilder ReturnSum(List <int> numberList)
         {
+            IEnumerable<int> numbers = numberList;
             StringBuilder sumResult = new StringBuilder();
             var sum = 0;
 
-            for (int i = 0; i < numberList.Count(); i++)
+            for(int i = 0; i < numbers.Count(); i++)
             {
-                if (i < numberList.Count() - 1)
+                if (i < numbers.Count() - 1)
                 {
-                    sumResult.Append($"{numberList[i]} + ");
+                    sumResult.Append($"{numbers.ElementAt(i)} + ");
                 }
                 else
                 {
-                    sumResult.Append($"{numberList[i]} = ");
+                    sumResult.Append($"{numbers.ElementAt(i)} = ");
                 }
 
-                sum += numberList[i];
+                sum += numbers.ElementAt(i);
             }
 
             sumResult.Append(sum);

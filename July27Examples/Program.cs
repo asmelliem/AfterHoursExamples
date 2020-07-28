@@ -131,23 +131,20 @@ namespace July27Examples
         public static void EnumerableExample()
         {
             var listOfNames = new List<string> { "Ada", "Tashi", "Lily", "Rachel", "Lola", "Layal", "John", "Randy", "Johnny", "Johnathon" };
-            IEnumerable<string> names = listOfNames.Where(name => name.StartsWith("L"));
+            IEnumerable<string> namesStartingWithL = listOfNames.Where(name => name.StartsWith("L"));
+            IEnumerable<string> namesContainingJohn = listOfNames.Where(name => name.Contains("John"));
 
             Console.WriteLine("Showing list of names that start with L:");
-            foreach (string name in names)
+            foreach (string name in namesStartingWithL)
             {
                 Console.WriteLine(name);
-            }
-
-            names = listOfNames.Where(name => name.Contains("John"));
+            }            
 
             Console.WriteLine("List names that contain 'John'");
-            foreach (string name in names)
+            foreach (string name in namesContainingJohn)
             {
                 Console.WriteLine(name);
             }
-
-
         }
 
         public static StringBuilder ReturnSum(List <int> numberList)

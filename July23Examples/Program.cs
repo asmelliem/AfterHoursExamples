@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace July23Examples
 {
@@ -33,6 +34,9 @@ namespace July23Examples
                 int[] numInput = GetUserInput();
                 Console.WriteLine($"The sum your previously entered numbers is: {CalculateSum(numInput)}");
                 Console.WriteLine($"The average of your previously entered numbers is: {CalculateAverage(numInput)}");
+                Console.WriteLine($"The numbers in ascending order are: {DisplayAscendingOrder(numInput)}");
+                Console.WriteLine($"The median of your previously entered numbers is: {CalculateMedian(numInput)}");
+                
                 Console.WriteLine("Would you like to continue? (y/n)");
 
             } while (Console.ReadLine().ToUpper() == "Y");
@@ -55,6 +59,26 @@ namespace July23Examples
             double sum = Convert.ToDouble(CalculateSum(numInput));
             double average = sum / numInput.Length;
             return average;
+        }
+
+        public static double CalculateMedian(int [] numInput)
+        {
+            var sortedNumbers = DisplayAscendingOrder(numInput).ToString().Split(' ');
+
+            return Convert.ToDouble(sortedNumbers[2]);
+        }
+
+        public static StringBuilder DisplayAscendingOrder(int [] numInput)
+        {
+            StringBuilder sortedNumbers = new StringBuilder();
+            Array.Sort(numInput, 0, numInput.Length);
+            foreach(int number in numInput)
+            {
+                sortedNumbers.Append($"{number} ");
+            }
+
+            return sortedNumbers;
+
         }
 
         public static int [] GetUserInput()

@@ -13,8 +13,9 @@ namespace July27Examples
             //Exercise36();
             //Exercise47();
             Exercise48();
-            //DictionaryExample();
-           
+            //DictionaryExample();            
+            //EnumerableExample();
+                    
         }
 
         public static void Exercise34()
@@ -91,7 +92,6 @@ namespace July27Examples
             Console.WriteLine("Goodbye!");
         }
 
-
         public static void Exercise48()
         {            
             do
@@ -126,6 +126,28 @@ namespace July27Examples
             } while (Console.ReadLine().ToUpper() == "Y");
 
             Console.WriteLine("Goodbye!"); 
+        }
+
+        public static void EnumerableExample()
+        {
+            var listOfNames = new List<string> { "Ada", "Tashi", "Lily", "Rachel", "Lola", "Layal", "John", "Randy", "Johnny", "Johnathon" };
+            IEnumerable<string> names = listOfNames.Where(name => name.StartsWith("L"));
+
+            Console.WriteLine("Showing list of names that start with L:");
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
+
+            names = listOfNames.Where(name => name.Contains("John"));
+
+            Console.WriteLine("List names that contain 'John'");
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
+
+
         }
 
         public static StringBuilder ReturnSum(List <int> numberList)

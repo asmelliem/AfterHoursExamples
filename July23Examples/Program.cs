@@ -32,7 +32,7 @@ namespace July23Examples
             {
                 int[] numInput = GetUserInput();
                 Console.WriteLine($"The sum your previously entered numbers is: {CalculateSum(numInput)}");
-                Console.WriteLine($"The average your previously entered numbers is: {CalculateAverage(numInput)}");
+                Console.WriteLine($"The average of your previously entered numbers is: {CalculateAverage(numInput)}");
                 Console.WriteLine("Would you like to continue? (y/n)");
 
             } while (Console.ReadLine().ToUpper() == "Y");

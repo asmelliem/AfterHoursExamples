@@ -13,7 +13,7 @@ namespace July27Examples
             //Exercise34();
             //Exercise36();
             //Exercise47();
-            //Exercise48();
+            Exercise48();
             //DictionaryExample();            
             //EnumerableExample();
                     
@@ -129,9 +129,10 @@ namespace July27Examples
             Console.WriteLine("Goodbye!"); 
         }
 
+
         public static void EnumerableExample()
         {
-            var listOfNames = new List<string> { "Ada", "Tashi", "Lily", "Rachel", "Lola", "Layal", "John", "Randy", "Johnny", "Johnathon" };
+            IEnumerable<string> listOfNames = new List<string> { "Ada", "Tashi", "Lily", "Rachel", "Lola", "Layal", "John", "Randy", "Johnny", "Johnathon" };
             IEnumerable<string> namesStartingWithL = listOfNames.Where(name => name.StartsWith("L"));
             IEnumerable<string> namesContainingJohn = listOfNames.Where(name => name.Contains("John"));
 

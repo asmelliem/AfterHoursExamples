@@ -6,7 +6,7 @@ namespace August3Examples
 {
     public class Square : Shape
     {
-        public Square(double length, double height)  : base(length, height)
+        public Square(double length, double height)
         {
             base.Length = length;
             base.Height = height;

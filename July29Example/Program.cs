@@ -7,7 +7,7 @@ namespace July29Example
     {
         public static void Main(string[] args)
         {
-            /*
+            
             //Animal animal = new Animal("Tri-color","Dog", "Lily", 48);
 
             //Animal animalTwo = new Animal("Tri-color", "Dog", "Tashi", 25);
@@ -23,8 +23,7 @@ namespace July29Example
 
             //Console.WriteLine(animal.Name);
             //Console.WriteLine(animalTwo.Name);
-            //Console.WriteLine(dog.Color);
-            */
+            //Console.WriteLine(dog.Color);         
             
 
         }

@@ -15,14 +15,12 @@ namespace OOPExampleExercises
 
         public int CalculatePerimeter()
         {
-            var perimeter = this.SideLength * 4;
-            return perimeter;
+            return SideLength * 4;
         }
 
         public int CalculateArea ()
         {
-            var area = this.SideLength * SideLength;
-            return area;
+            return SideLength * SideLength;
         }
 
     }

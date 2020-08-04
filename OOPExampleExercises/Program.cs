@@ -5,7 +5,7 @@ namespace OOPExampleExercises
     public class Program
     {
         #region Exercise 42 & 43
-        //Exercise 42 & 43
+        /*Exercise 42 & 43
         public static void Main(string[] args)
         {
             do 
@@ -34,10 +34,11 @@ namespace OOPExampleExercises
 
             Console.WriteLine("Goodbye!");            
         }
+        */
         #endregion
 
         #region Exercise 45
-        /*Exercise 45
+        //Exercise 45
         public static void Main(string[] args)
         {
             do
@@ -60,8 +61,7 @@ namespace OOPExampleExercises
                 }
 
             } while (Console.ReadLine().ToUpper() == "Y");
-        }
-        */
+        }        
         #endregion
     }
 }

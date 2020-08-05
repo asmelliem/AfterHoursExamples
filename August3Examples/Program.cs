@@ -16,12 +16,12 @@ namespace August3Examples
                     Console.WriteLine("Enter the radius of the circle: ");
                     var radius = double.Parse(Console.ReadLine());
                     var circle = new Circle(radius);
-                    Console.WriteLine($"The circle with radius {radius} has an area of {circle.CalculateArea()}");
+                    Console.WriteLine($"The circle with radius {radius} has an area of {circle.CalculateArea()}. {circle.WriteNumberOfSides()}");
 
                     Console.WriteLine("\nEnter the side length of the square: ");
                     var squareLength = double.Parse(Console.ReadLine());
                     var square = new Square(squareLength, squareLength);
-                    Console.WriteLine($"The square with side length of {squareLength} has an area of {square.CalculateArea()}");
+                    Console.WriteLine($"The square with side length of {squareLength} has an area of {square.CalculateArea()}. {square.WriteNumberOfSides()}");
 
                     Console.WriteLine("\nEnter the length of the first side of the triangle: ");
                     var sideLengthOne = double.Parse(Console.ReadLine());
@@ -30,7 +30,8 @@ namespace August3Examples
                     Console.WriteLine("\nEnter the length of the third side of the triangle: ");
                     var sideLengthThree = double.Parse(Console.ReadLine());
                     var triangle = new Triangle(sideLengthOne, sideLengthTwo, sideLengthThree);
-                    Console.WriteLine($"The triangle with the length of {sideLengthOne}, {sideLengthTwo} and {sideLengthThree} has an area of {triangle.CalculateArea()}");
+                    Console.WriteLine($"The triangle with the length of {sideLengthOne}, {sideLengthTwo} and {sideLengthThree} " +
+                        $"has an area of {triangle.CalculateArea()}. {triangle.WriteNumberOfSides()}");
                 }
                 catch(Exception e)
                 {

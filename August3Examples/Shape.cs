@@ -4,15 +4,16 @@ using System.Text;
 
 namespace August3Examples
 {
-    public class Shape
+    public abstract class Shape
     {
-        public double Length { get; set; }
+        public abstract double Length { get; set; }
 
-        public double Height { get; set; }
+        public abstract double Height { get; set; }
 
-        public virtual double CalculateArea()
-        {
-            return Length * Height;
-        }        
+        public abstract int NumberOfSides { get; set; }
+
+        public abstract double CalculateArea();
+
+        public abstract string WriteNumberOfSides();
     }
 }

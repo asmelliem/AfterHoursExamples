@@ -4,16 +4,12 @@ using System.Text;
 
 namespace August3Examples
 {
-    public abstract class Shape
+    public interface IShape
     {
-        public abstract double Length { get; set; }
+        int NumberOfSides { get; set; }
 
-        public abstract double Height { get; set; }
+        double CalculateArea();
 
-        public abstract int NumberOfSides { get; set; }
-
-        public abstract double CalculateArea();
-
-        public abstract string WriteNumberOfSides();
+        string WriteNumberOfSides();
     }
 }

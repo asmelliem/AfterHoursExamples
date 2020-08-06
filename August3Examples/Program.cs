@@ -6,7 +6,7 @@ namespace August3Examples
     public class Program
     {
         public static void Main(string[] args)
-        {
+        {            
             Console.WriteLine("Welcome to the Shape Tester!\n");
 
             do
@@ -37,7 +37,7 @@ namespace August3Examples
                 {
                     Console.WriteLine(e);
                 }               
-            } while (ContinueProgram());
+            } while (ContinueProgram());            
         }
 
         public static bool ContinueProgram()

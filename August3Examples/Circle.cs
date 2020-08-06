@@ -4,11 +4,11 @@ using System.Text;
 
 namespace August3Examples
 {
-    public class Circle: Shape
+    public class Circle: IShape
     {
         public double Radius { get; set; }
 
-        public override int NumberOfSides { get; set; }
+        public int NumberOfSides { get; set; }
 
         public Circle(double radius)
         {
@@ -16,19 +16,14 @@ namespace August3Examples
             NumberOfSides = 0;
         }
 
-        public override double CalculateArea()
+        public double CalculateArea()
         {
             //Area = (pi)r^2
             return (Math.PI) * Math.Pow(Radius, 2);
         }
-        public override string WriteNumberOfSides()
+        public string WriteNumberOfSides()
         {
-            return "It has 0 sides";
-
+            return $"It has {NumberOfSides} sides";
         }
-
-        public override double Length { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override double Height { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
     }
 }

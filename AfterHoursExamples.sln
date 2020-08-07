@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "July30Examples", "July30Exa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "August3Examples", "August3Examples\August3Examples.csproj", "{6EA1C167-7C92-4434-BCF6-25775B1109BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "August5thInterfaceExample", "August5thInterfaceExample\August5thInterfaceExample.csproj", "{970939AA-7A1C-4A26-9E25-101B018EA3B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "August5thInterfaceExample", "August5thInterfaceExample\August5thInterfaceExample.csproj", "{970939AA-7A1C-4A26-9E25-101B018EA3B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "August6thEnums", "August6thEnums\August6thEnums.csproj", "{31CBCA9F-23D3-4311-9FDF-843C00B77355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{970939AA-7A1C-4A26-9E25-101B018EA3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970939AA-7A1C-4A26-9E25-101B018EA3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970939AA-7A1C-4A26-9E25-101B018EA3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CBCA9F-23D3-4311-9FDF-843C00B77355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CBCA9F-23D3-4311-9FDF-843C00B77355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CBCA9F-23D3-4311-9FDF-843C00B77355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CBCA9F-23D3-4311-9FDF-843C00B77355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

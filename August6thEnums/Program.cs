@@ -34,13 +34,15 @@ namespace August6thEnums
         {
             //UserInputForShapes();
             //UserInputForAutomobiles();
-            
+
             //Exercise 58-60
+            var deck = CreateDeck();
             do
             {
-                var deck = ShuffleDeck();
+                deck = ShuffleDeck(deck);
                 var firstCard = deck.First();
-                Console.WriteLine($"Shuffling...You drew {firstCard.PrintCard()}");                
+                deck.RemoveAt(0);
+                Console.WriteLine($"Shuffling...You drew {firstCard.PrintCard()}. There are now {deck.Count} cards left in the deck");                
 
             } while (ContinueProgram());
 
@@ -70,13 +72,11 @@ namespace August6thEnums
 
         }
 
-        public static List<Card> ShuffleDeck()
+        public static List<Card> ShuffleDeck(List<Card> deck)
         {
-            var deck = CreateDeck();
             deck.Shuffle();
             return deck;
-        }
-        
+        }        
 
         public static List<Card> CreateDeck()
         {

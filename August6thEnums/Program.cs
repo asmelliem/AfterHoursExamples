@@ -8,8 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace August6thEnums
-{  
-
+{
+    //https://stackoverflow.com/questions/273313/randomize-a-listt
+    //Fisher-Yates shuffle
     static class MyExtensions
     {
         private static Random rng = new Random();

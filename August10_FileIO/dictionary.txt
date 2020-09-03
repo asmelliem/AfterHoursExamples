@@ -1,0 +1,5 @@
+hello,hola
+food,comida
+world,mundo
+computer,computadora
+exercise,ejercicio

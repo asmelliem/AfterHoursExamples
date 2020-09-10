@@ -37,5 +37,20 @@ namespace TDDExampleTest
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ShouldReturnFizzBuzzForMultipleOfThreeAndFive()
+        {
+            //Arrange
+            var input = 15;
+            var expected = "FizzBuzz";
+            FizzBuzz fizzBuzz = new FizzBuzz();
+
+            //Act
+            var actual = fizzBuzz.DetermineFizzBuzzOutput(input);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }

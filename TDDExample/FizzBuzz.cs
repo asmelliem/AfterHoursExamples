@@ -8,15 +8,18 @@ namespace TDDExample
     {
         public string DetermineFizzBuzzOutput(int input)
         {
-            if(input %5 == 0)
+            if(input % 5 == 0 && input % 3 == 0)
+            {
+                return "FizzBuzz";
+            }
+            else if(input %5 == 0)
             {
                 return "Buzz";
             }
             else
             {
                 return "Fizz";
-            }
-            
+            }            
         }
     }
 }

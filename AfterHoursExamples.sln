@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "August6thEnums", "August6th
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "August10_FileIO", "August10_FileIO\August10_FileIO.csproj", "{FA4A9364-1786-4951-BCF5-CDB1E9F67796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "September2ndExamples", "September2ndExamples\September2ndExamples.csproj", "{3AB202A6-7144-45A7-880F-0C89A5B638E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "September2ndExamples", "September2ndExamples\September2ndExamples.csproj", "{3AB202A6-7144-45A7-880F-0C89A5B638E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmExamples", "AlgorithmExamples\AlgorithmExamples.csproj", "{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{3AB202A6-7144-45A7-880F-0C89A5B638E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AB202A6-7144-45A7-880F-0C89A5B638E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AB202A6-7144-45A7-880F-0C89A5B638E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

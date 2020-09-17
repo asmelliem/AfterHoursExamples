@@ -86,7 +86,7 @@ namespace Week4Exercises
                 {
                     Console.WriteLine($"The value {number} can be found at index {index}");
                 }
-                else;
+                else
                 {
                     Console.WriteLine("That value cannot be found in the array.");   
                 }

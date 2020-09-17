@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 82</title>
+</head>
+<body>
+  <h2>Food Entry</h2>
+
+<script>
+
+var foodName = AskForFoodName();
+var foodPrice = AskForFoodPrice();
+var validName = ValidateName(foodName);
+var validPrice = ValidatePrice(foodPrice);
+
+if(validName === false || validPrice === false)
+{
+  alert("You entered invalid input");
+}
+else
+{
+  alert("You entered valid input");
+}
+
+
+function AskForFoodName()
+{
+  var foodName = prompt("Enter the name of the food"); 
+  return foodName;
+}
+
+function AskForFoodPrice()
+{
+  var foodPrice = prompt("Enter the price of the food");
+  return foodPrice;
+}
+
+function ValidateName(foodName)
+{
+    if(foodName.length < 2)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+function ValidatePrice(foodPrice)
+{
+    var regex = /^[1-9]\d*(?:\.\d{0,2})?$/;
+    return regex.test(foodPrice);
+}
+</script>
+
+</body>
+</html>

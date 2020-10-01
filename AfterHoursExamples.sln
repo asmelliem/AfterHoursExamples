@@ -47,9 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "September2ndExamples", "Sep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmExamples", "AlgorithmExamples\AlgorithmExamples.csproj", "{2B419C75-E3D3-4A26-B647-5A2CF763C1AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDExample", "TDDExample\TDDExample.csproj", "{12427319-9761-4BEA-A4C7-5742813E7397}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDExample", "TDDExample\TDDExample.csproj", "{12427319-9761-4BEA-A4C7-5742813E7397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDExampleTest", "TDDExampleTest\TDDExampleTest.csproj", "{16A8C387-8C5F-430F-831A-5B9CAE5F5EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDExampleTest", "TDDExampleTest\TDDExampleTest.csproj", "{16A8C387-8C5F-430F-831A-5B9CAE5F5EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCExample", "MVCExample\MVCExample.csproj", "{BD0DFCBE-7A5F-450D-A659-4562BEA1F3AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{16A8C387-8C5F-430F-831A-5B9CAE5F5EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A8C387-8C5F-430F-831A-5B9CAE5F5EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A8C387-8C5F-430F-831A-5B9CAE5F5EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0DFCBE-7A5F-450D-A659-4562BEA1F3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0DFCBE-7A5F-450D-A659-4562BEA1F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0DFCBE-7A5F-450D-A659-4562BEA1F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0DFCBE-7A5F-450D-A659-4562BEA1F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

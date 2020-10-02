@@ -1,0 +1,34 @@
+﻿@model CalculatorViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to .NET Calculator</h1>
+    <p>Calculator</p>
+</div>
+
+<form asp-action="LinkSomewhere">
+    <div class="form-group col-md-6">
+        <label for="Number">First Number</label>
+        <input asp-for="@Model.InputOne" class="form-control" id="numberOne" placeholder="Type a number">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="Number">Second Number</label>
+        <input asp-for="@Model.InputTwo" class="form-control" id="numberTwo" placeholder="Type a number">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputState">Operation</label>
+        <select asp-for="@Model.Operation" id="operation" class="form-control">
+            <option selected>Add</option>
+            <option>Subtract</option>
+            <option>Divide</option>
+            <option>Multiply</option>
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <button type="submit" value="Calculate" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+

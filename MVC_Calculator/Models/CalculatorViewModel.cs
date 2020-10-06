@@ -11,7 +11,7 @@ namespace MVC_Calculator.Models
 
         public decimal InputTwo { get; set; }
 
-        public string Operation { get; set; }
+        public CalculatorType Operation { get; set; }
 
         public string Result { get; set; }
     }

@@ -10,21 +10,22 @@ namespace MVC_Calculator.Controllers
 {
     public class CalculatorController : Controller
     {
+
+        private readonly ICalculationService _calculationService;
+
+        public CalculatorController(ICalculationService calculationService)
+        {
+            _calculationService = calculationService;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
 
         public IActionResult CalculateResult(CalculatorViewModel model)
-        {
-            var calcService = new CalculationService();
-            var result = calcService.Calculate(model);
-            //do some work of validating the user input
-            //display the results of all the above work
-            //display it in the current page?
-            //display it in another page?
-            //do we need another model?
-            //do we need another view? 
+        {            
+            var result = _calculationService.Calculate(model);
             return View(result);
         }
     }

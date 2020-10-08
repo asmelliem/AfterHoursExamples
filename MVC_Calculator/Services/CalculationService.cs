@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVC_Calculator.Services
 {
-    public class CalculationService
+    public class CalculationService : ICalculationService
     {
         public CalculatorViewModel Calculate(CalculatorViewModel model)
         {

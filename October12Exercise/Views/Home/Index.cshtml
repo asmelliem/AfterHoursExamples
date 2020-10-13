@@ -1,0 +1,31 @@
+﻿@model UISettingModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Please select your background color and font!</h1>
+</div>
+<form asp-action="ChangeUI">
+    <div class="form-group col-md-6">
+        <label for="Font">Font Style</label>
+        <select asp-for="@Model.Font id="font" class="form-control">
+            <option >Algerian</option>
+            <option>Bodoni MT</option>
+            <option>Agency FB</option>
+        </select>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="BackgroungColor">Background Color</label>
+        <select asp-for="@Model.BackgroundColor id="BackgroungColor" class="form-control">
+            <option>Blue</option>
+            <option>Orange</option>
+            <option>Red</option>
+            <option>Green</option>
+        </select>
+    </div>    
+    <div class="form-group col-md-6">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

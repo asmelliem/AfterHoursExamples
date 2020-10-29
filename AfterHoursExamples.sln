@@ -73,11 +73,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "October15thEFCore", "Octobe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "October19thEFExample", "October19thEFExample\October19thEFExample.csproj", "{7502DA91-A894-4529-8C4D-93657E3669EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreWebApp", "BookStoreWebApp\BookStoreWebApp.csproj", "{307E2B45-1ED9-4FB3-A645-499701BAF86C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreWebApp", "BookStoreWebApp\BookStoreWebApp.csproj", "{307E2B45-1ED9-4FB3-A645-499701BAF86C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{85A32D71-16F0-4D69-A809-F4DB826804C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreDAL", "BookStoreDAL\BookStoreDAL.csproj", "{0DA1AF1D-28F6-4D3C-9DF6-89738A91D9E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreDAL", "BookStoreDAL\BookStoreDAL.csproj", "{0DA1AF1D-28F6-4D3C-9DF6-89738A91D9E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "October28thIdentity", "October28thIdentity\October28thIdentity.csproj", "{56FCB266-2CD7-41C3-B638-CD03C50E1482}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{0DA1AF1D-28F6-4D3C-9DF6-89738A91D9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA1AF1D-28F6-4D3C-9DF6-89738A91D9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA1AF1D-28F6-4D3C-9DF6-89738A91D9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FCB266-2CD7-41C3-B638-CD03C50E1482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FCB266-2CD7-41C3-B638-CD03C50E1482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FCB266-2CD7-41C3-B638-CD03C50E1482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FCB266-2CD7-41C3-B638-CD03C50E1482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

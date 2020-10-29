@@ -16,6 +16,7 @@ namespace BookStoreDAL.Context
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Publisher> Publishers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,11 +24,17 @@ namespace BookStoreDAL.Context
             {
                 b.HasKey(k => k.Id);
                 b.HasOne(a => a.Author).WithMany(a => a.Books).HasForeignKey(k => k.AuthorId);
+                b.HasOne(p => p.Publisher).WithMany(p => p.Books).HasForeignKey(k => k.PublisherId);
             });
 
             modelBuilder.Entity<Author>(a =>
             {
                 a.HasKey(k => k.Id);
+            });
+
+            modelBuilder.Entity<Publisher>(p =>
+            {
+                p.HasKey(k => k.Id);
             });
         }
     }
